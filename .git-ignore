@@ -1,8 +1,5 @@
 # Dependencies
 /node_modules
 
-# Build artifacts
-/build/
-
 # Package lock file
 package-lock.json
