@@ -12,8 +12,8 @@ function shuffle(arr) {
 };
 
 function App() {
-  const rowCount = 4;
-  const colCount = 4;
+  const rowCount = 4; //Amount of rows
+  const colCount = 4; //Amount of columns 
   const tileCount = rowCount * colCount - 1;
 
   const [tiles, setTiles] = useState(shuffle(Array.from({ length: tileCount }, (_, i) => i + 1).concat(0)));
@@ -53,7 +53,6 @@ function App() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
 
   return (
     <div style={{ height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: 'column', }}>
